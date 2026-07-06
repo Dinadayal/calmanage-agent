@@ -81,13 +81,15 @@ graph TD
    - Do NOT initialize with README (you already have one)
 
 2. In your terminal, navigate into your project folder:
+   ```bash
    cd calmanage-agent
    git init
    git add .
    git commit -m "Initial commit: calmanage-agent ADK agent"
    git branch -M main
-   git remote add origin https://github.com/<your-username>/calmanage-agent.git
+   git remote add origin https://github.com/Dinadayal/calmanage-agent.git
    git push -u origin main
+   ```
 
 3. Verify .gitignore includes:
    .env          ← your API key — must NEVER be pushed
