@@ -252,7 +252,7 @@ root_agent = Workflow(
         Edge(from_node=security_checkpoint, to_node=security_violation_handler, route="SECURITY_EVENT"),
         Edge(from_node=orchestrator, to_node=approval_node),  # Unconditional edge
         Edge(from_node=approval_node, to_node=cancellation_handler, route="denied"),
-        Edge(from_node=approval_node, to_node=orchestrator, route=["approved", "auto_approved"]), # Compliant with Edge Rule
+        Edge(from_node=approval_node, to_node=orchestrator, route="approved"), # Compliant with Edge Rule
     ],
     description="CalManage executive assistant workflow."
 )
